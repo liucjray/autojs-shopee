@@ -36,7 +36,7 @@ function init() {
         if (find_返回2()) {
             find_返回2().clickCenter();
         }
-        sleep(1000);
+        sleep(oWaitSecs);
     }
 }
 
@@ -48,7 +48,7 @@ function click_我的() {
     let o = find_我的();
     if (o) {
         o.clickCenter();
-        sleep(1000);
+        sleep(oWaitSecs);
     }
 }
 
@@ -61,28 +61,7 @@ function click_by_text(txt) {
     let o = find_by_text(txt);
     if (o) {
         o.clickCenter();
-        sleep(1000);
-    }
-}
-
-function find_購買清單() {
-    return text('購買清單').findOne(oWaitSecs);
-}
-function click_購買清單() {
-    let o = find_購買清單();
-    if (o) {
-        o.clickCenter();
-        sleep(1000);
-    }
-}
-function find_訂單已完成() {
-    return text('訂單已完成').findOne(oWaitSecs);
-}
-function click_訂單已完成() {
-    let o = find_訂單已完成();
-    if (o) {
-        o.clickCenter();
-        sleep(1000);
+        sleep(oWaitSecs);
     }
 }
 
